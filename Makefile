@@ -18,7 +18,9 @@ LDFLAGS=$(RELEASE_LDFLAGS) $(MAIN_LDFLAGS)
 endif
 
 
-all: $(LIB)
+lib: $(LIB)
+
+all: $(LIB) $(EXEC)
 
 libstropt.a: atropt.o user.o
 	$(AR) rcs $@ $^
