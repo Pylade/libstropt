@@ -25,7 +25,7 @@ all: $(LIB) $(EXEC)
 libstropt.a: atropt.o user.o
 	$(AR) rcs $@ $^
 
-libstropt.so.0.1-a2: atropt.pic.o user.pic.o
+libstropt.so.1.0-a2: atropt.pic.o user.pic.o
 	$(CC) $(LDFLAGS) $^ -o $@
 
 atropt.o: atropt.c atropt.h stropt.h
